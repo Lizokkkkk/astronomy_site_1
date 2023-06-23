@@ -136,7 +136,7 @@ btn_planet.addEventListener("click", () => {
                 planet = 'Солнце';
             break;
         case 8:
-            if (day <= 22)
+            if (day <= 23)
                 planet = 'Солнце';
             else
                 planet = 'Нептун';
