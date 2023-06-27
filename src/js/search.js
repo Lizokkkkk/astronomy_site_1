@@ -83,9 +83,9 @@ btn_horoscope.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `http://127.0.0.1:5501/src/html/horoscope.html?sign=${sign}`;
+    location.href += `horoscope/?sign=${sign}`
 });
-              
+
 btn_sign.addEventListener("click", () => {
     birthdate = new Date(data.value);
     const month = birthdate.getMonth() + 1;
@@ -164,7 +164,7 @@ btn_sign.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `http://127.0.0.1:5500/src/html/sign.html?sign=${sign}`;
+    location.href += `sign/?sign=${sign}`
 });
 
 btn_planet.addEventListener("click", () => {
@@ -245,18 +245,5 @@ btn_planet.addEventListener("click", () => {
                 sign = 'Козерог';
             break;
     }
-    location.href = `http://127.0.0.1:5500/src/html/planet.html?sign=${sign}`;
+    location.href += `planet/?sign=${sign}`
 });
-
-
-
-// location.href = `https://lizokkkkk.github.io/astronomy_site/src/html/sign.html?info=${input.value}`;
-
-// function sendInput() {
-//     if (buildingName.includes(input.value)) {
-//       location.href = `https://lizokkkkk.github.io/MTUCI_map/src/html/building.html?info=${input.value}`;
-//     } else {
-//       location.href = `https://lizokkkkk.github.io/MTUCI_map/src/html/building.html?info=404`;
-//     }
-// }
-  
